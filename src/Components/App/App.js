@@ -1,9 +1,7 @@
-import logo from './../../logo.svg';
 import './App.css';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import HeaderBar from './../HeaderBar/headerBar';
+import Content from './../Content/content';
 
 function App() {
   return (
@@ -13,10 +11,11 @@ function App() {
         <HeaderBar />
       </Grid>
       <Grid item container>
-        <Grid item xs={false} sm={2} md lg xl />
-        <Grid item xs={12} sm={8} md lg xl />
-          {/* <Content /> */}
-        <Grid item xs={false} sm={2} md lg xl />
+        <Grid item xs={false} sm={2} />
+        <Grid item xs={12} sm={8}>
+          <Content /> 
+        </Grid>
+        <Grid item xs={false} sm={2} />
       </Grid>
     </Grid>
   );
